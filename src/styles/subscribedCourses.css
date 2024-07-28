@@ -1,0 +1,107 @@
+/* src/styles/subscribedCourses.css */
+
+.subscribed-courses-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.courses-list h2 {
+  margin-top: 20px;
+}
+
+.courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: 280px;
+  width: 100%;
+  color: black;
+}
+
+.course-item:hover {
+  background: linear-gradient(135deg, #6b7aff, #f06595);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  color: white;
+}
+
+.course-item:hover h3,
+.course-item:hover p,
+.course-item:hover a {
+  color: white;
+}
+
+.course-item h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: black;
+}
+
+.course-item p {
+  margin: 5px 0;
+  color: black;
+}
+
+.course-item a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item a:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* src/styles/subscribedCourses.css */
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+  background-color: #0056b3;
+}
+
+.filter-container button.active {
+  background-color: #0056b3;
+}
+
+/* Ensure dropdown visibility */
+body {
+  overflow: visible; /* Ensure dropdown is not clipped by the body */
+}

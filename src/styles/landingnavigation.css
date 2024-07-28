@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Reduced padding to decrease height */
+    background: linear-gradient(135deg, #6b7aff, #f06595); /* Gradient background for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 100vw; /* Set maximum width for the navbar */
+    margin: 0 auto; /* Center align the navbar */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Choose your desired font */
+    font-weight: bold; /* Apply font weight */
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  
+  .logo-image {
+    width: 80px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    background-color: transparent;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1rem; /* Space between links */
+  }
+  
+  .nav-button {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    font-size: 0.875rem; /* Decrease font size */
+    font-weight: 600;
+    padding: 0.25rem 0.75rem; /* Adjust padding to decrease button height */
+    border-radius: 5px;
+    background: #007bff; /* Blue shade background */
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  .session-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 15px;
+    border:0;
+  }
+  
+  .session-indicator.active {
+    background-color: green;
+  }
+  
+  .session-indicator.expired {
+    background-color: red;
+  }

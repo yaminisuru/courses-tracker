@@ -1,0 +1,35 @@
+.learning-path-suggester {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.learning-path-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learning-path-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.learning-path-list li {
+  margin: 10px 0;
+}
+
+.learning-path-list li strong {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.learning-path-list ul ul {
+  padding-left: 20px;
+}
+
+.learning-path-list ul ul li {
+  font-size: 1em;
+  margin-bottom: 3px;
+}

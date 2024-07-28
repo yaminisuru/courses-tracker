@@ -1,0 +1,245 @@
+/* General Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 2rem;
+  background: #ffffff; /* Solid background for the main container */
+}
+
+/* Main Section */
+.main {
+  flex: 1;
+  padding: 3rem 1rem;
+  color: #333333; /* Dark text color for readability */
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  padding: 3rem 2rem; /* Increased padding */
+  background-color: #f06595; /* Gradient background */
+  color: #ffffff; /* White text color */
+  border-radius: 0 0 15px 15px; /* Rounded corners at the bottom */
+  margin-bottom: 0; /* Decreased margin below the header */
+}
+
+.header h1 {
+  font-size: 3rem; /* Larger font size */
+  margin-bottom: 1rem;
+  color:#ffffff;
+}
+
+.header p {
+  font-size: 1.4rem; /* Larger font size */
+  margin-bottom: 1.5rem;
+  color:#ffffff; /* Adjusted margin below the paragraph */
+}
+
+.header .call-to-action {
+  background: #ffffff; /* White button background */
+  color: #6b7aff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header .call-to-action:hover {
+  background: #6b7aff; /* Hover background color */
+  color: #ffffff; /* Hover text color */
+}
+
+/* How It Works Section */
+.how-it-works {
+  background: #f9f9f9; /* Light background */
+  padding: 3rem 2rem; /* Padding for the section */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0; /* Margin between sections */
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem; /* Section heading size */
+  color: #6b7aff; /* Heading color */
+  margin-bottom: 1rem;
+}
+
+.how-it-works p {
+  font-size: 1.2rem; /* Adjusted font size */
+  color: #333333; /* Text color */
+  margin-bottom: 1rem;
+}
+
+.how-it-works ol {
+  margin-left: 2rem;
+  font-size: 1.1rem; /* Font size for list items */
+}
+
+.how-it-works li {
+  margin-bottom: 0.5rem;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 7rem 0 5rem; /* Increased margin above and below the section */
+}
+
+/* Feature Card */
+.feature {
+  background: linear-gradient(135deg, #6b7aff, #f06595); /* Gradient background */
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #ffffff; /* White text color */
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature .icon img {
+  width: 150px; /* Increased logo size */
+  height: auto;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.feature p {
+  font-size: 1rem;
+}
+
+/* Explore Button */
+.button {
+  background: #ffffff; /* White background for button */
+  color: #6b7aff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background: #6b7aff; /* Button background color on hover */
+  color: #ffffff; /* Button text color on hover */
+}
+
+/* Animation Section */
+.animation-section {
+  margin: 3rem 3rem; /* Increased margin above and below the section */
+  text-align: center;
+}
+
+.animation img {
+  width: 350px; /* Adjust size */
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.animation img:hover {
+  transform: scale(1.05);
+}
+
+/* FAQ Section */
+.faq {
+  margin: 3rem 3rem; /* Increased margin above and below the section */
+}
+
+.faq-item {
+  background: linear-gradient(135deg, #6b7aff, #f06595); /* Gradient background for FAQ items */
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #ffffff; /* White text color on gradient background */
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 1rem;
+  background: transparent; /* Transparent background */
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  margin: 3rem 3rem; /* Increased margin above and below the section */
+}
+
+.testimonial {
+  background: linear-gradient(135deg, #6b7aff, #f06595); /* Gradient background for testimonials */
+  color: #ffffff; /* White text color on gradient background */
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial h4 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Call to Action Section */
+.call-to-action-section {
+  text-align: center;
+  margin: 3rem 0; /* Increased margin above and below the section */
+}
+
+.call-to-action-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.call-to-action-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.call-to-action-section .call-to-action {
+  background: #6b7aff; /* Primary button color */
+  color: #ffffff; /* White text color */
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.call-to-action-section .call-to-action:hover {
+  background: #f06595; /* Button hover color */
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #333333;
+  background: #f0f0f0; /* Light gray background for the footer */
+}

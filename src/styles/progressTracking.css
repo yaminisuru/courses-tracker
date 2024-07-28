@@ -1,0 +1,30 @@
+.progress-container {
+    padding: 20px;
+  }
+  
+  .progress-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .progress-item {
+    margin-bottom: 20px;
+  }
+  
+  .progress-item h2 {
+    margin-bottom: 10px;
+  }
+  
+  .save-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #45a049;
+  }
+  

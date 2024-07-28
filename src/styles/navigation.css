@@ -1,0 +1,125 @@
+/* src/styles/navigation.css */
+
+/* Overall navbar styling */
+.navbar {
+  background: linear-gradient(135deg, #6b7aff, #f06595);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better separation */
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.navbar-left a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown styling */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-container select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #6b7aff, #f06595);
+  color: white; /* Default text color */
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+  font-size: 16px; /* Adjust font size */
+}
+
+/* Style for the dropdown options */
+.dropdown-container select option {
+  color: black; /* Default text color for options */
+}
+
+/* Style for the selected option */
+
+
+/* Hover state for dropdown */
+.dropdown-container select:hover {
+  background: linear-gradient(135deg, #5a6bff, #e0558c); /* Slightly different gradient on hover */
+}
+
+
+/* Login button styling */
+.search-button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Adjust font size */
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+.logout-button {
+  text-decoration: none;
+  color: #ffffff; /* White text color */
+  font-size: 0.875rem; /* Decrease font size */
+  font-weight: 600;
+  padding: 0.5rem 0.75rem; /* Adjust padding to decrease button height */
+  border-radius: 5px;
+  background: #007bff; /* Blue shade background */
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  border:'0';
+  margin:"20px"
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left, .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-left a {
+    padding: 8px 10px;
+  }
+
+  .search-button {
+    padding: 8px 10px;
+  }
+}
+
+.session-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.session-indicator.active {
+  background-color: green;
+}
+
+.session-indicator.expired {
+  background-color: red;
+}
